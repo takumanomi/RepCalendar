@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
-
+//コメント
 class CalendarAdapter(context: Context) : BaseAdapter() {
     private var dateArray: List<Any> = ArrayList()
     private val mContext: Context
