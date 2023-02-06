@@ -18,89 +18,99 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/food" />
 
-    <Button
-        android:id="@+id/hopper"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageButton
+        android:id="@+id/clicketButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.397"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/clicket"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
-        android:id="@+id/warm"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageButton
+        android:id="@+id/cockloachButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.397"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/cockroach"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
-        android:id="@+id/food"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageButton
+        android:id="@+id/gelButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.542"
+        app:srcCompat="@drawable/gel"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
-        android:id="@+id/roach"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        android:text="@null"
+    <ImageButton
+        android:id="@+id/mouseButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.397"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.323"
+        app:srcCompat="@drawable/mouse"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
-        android:id="@+id/mouse"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
+    <ImageButton
+        android:id="@+id/pinkmouseButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.323"
+        app:srcCompat="@drawable/pinkmouse"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
-        android:id="@+id/vegI"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageButton
+        android:id="@+id/wormButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/worm"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/vegiButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587"
+        app:layout_constraintVertical_bias="0.542"
+        app:srcCompat="@drawable/vegi"
         tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
