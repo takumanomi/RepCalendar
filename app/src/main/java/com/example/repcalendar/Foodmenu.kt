@@ -13,18 +13,22 @@ class Foodmenu : AppCompatActivity() {
         binding = ActivityFoodmenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
-        fun onFoodButtonTapped(view: View?) {
-            val intent = Intent(this, size::class.java)
-            startActivity(intent)
-
-        }
         binding.clicketButton.setOnClickListener {onFoodButtonTapped(it)}
         binding.cockloachButton.setOnClickListener{onFoodButtonTapped(it)}
         binding.mouseButton.setOnClickListener{onFoodButtonTapped(it)}
         binding.pinkmouseButton.setOnClickListener{onFoodButtonTapped(it)}
 
+    }
+    fun onFoodButtonTapped(view: View?) {
+        val intent = Intent(this, size::class.java)
+        when (view?.id) {
+            R.id.clicketButton -> {
+                val text = "clicket"
+                intent.putExtra("TEXT_KEY",text)//”TEXT＿KEY”＝値を送るための鍵
+                //putExtraで値（「選択したのはコオロギである」）を送る
+            }
+        }
+        startActivity(intent)
 
     }
 }
