@@ -18,6 +18,18 @@ class size : AppCompatActivity() {
             "clicket" -> {
                 binding.image.setImageResource(R.drawable.clicket)
             }
+            "cockloach" ->{
+                binding.image.setImageResource(R.drawable.cockroach)
+            }
+            "mouse" ->{
+                binding.image.setImageResource(R.drawable.mouse)
+            }
+            "pinkmouse" ->{
+                binding.image.setImageResource(R.drawable.pinkmouse)
+            }
+            "worm" ->{
+                binding.image.setImageResource(R.drawable.worm)
+            }
         }
         //val intent: Intent = Intent(this,number().javaClass)
         //startActivity(intent)
