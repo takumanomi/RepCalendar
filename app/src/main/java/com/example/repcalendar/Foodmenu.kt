@@ -17,6 +17,8 @@ class Foodmenu : AppCompatActivity() {
         binding.cockloachButton.setOnClickListener{onFoodButtonTapped(it)}
         binding.mouseButton.setOnClickListener{onFoodButtonTapped(it)}
         binding.pinkmouseButton.setOnClickListener{onFoodButtonTapped(it)}
+        binding.wormButton.setOnClickListener{onFoodButtonTapped(it)}
+        binding.vegiButton.setOnClickListener{onFoodButtonTapped(it)}
 
     }
     fun onFoodButtonTapped(view: View?) {
@@ -41,6 +43,11 @@ class Foodmenu : AppCompatActivity() {
             }
             R.id.wormButton -> {
                 val text = "warm"
+                intent.putExtra("TEXT_KEY",text)
+            }
+            R.id.vegiButton -> {
+                intent = Intent(this, vegiActivity::class.java)
+                val text ="vegi"
                 intent.putExtra("TEXT_KEY",text)
             }
             //intent = Intent(this,vegiActivity::class.java)
