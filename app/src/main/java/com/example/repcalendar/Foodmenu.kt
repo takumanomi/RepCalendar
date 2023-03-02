@@ -42,11 +42,11 @@ class Foodmenu : AppCompatActivity() {
                 intent.putExtra("TEXT_KEY",text)
             }
             R.id.wormButton -> {
-                val text = "warm"
+                val text = "worm"
                 intent.putExtra("TEXT_KEY",text)
             }
             R.id.vegiButton -> {
-                intent = Intent(this, vegiActivity::class.java)
+                intent = Intent(this, vegiActivity::class.java)//negeに飛ばす
                 val text ="vegi"
                 intent.putExtra("TEXT_KEY",text)
             }

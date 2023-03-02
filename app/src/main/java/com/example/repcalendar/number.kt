@@ -13,11 +13,8 @@ class number : AppCompatActivity() ,View.OnClickListener {
 
         val intent: Intent = Intent(this,MainActivity().javaClass)
         startActivity(intent)
+    }
 
-
-
-
-        }
     override fun onClick(view: View) {
         when (view.id) {
             R.id.secretbutton1 -> {
@@ -25,6 +22,27 @@ class number : AppCompatActivity() ,View.OnClickListener {
             }
             R.id.secretbutton2 -> {
                 number = 2
+            }
+            R.id.secretbutton3 -> {
+                number = 3
+            }
+            R.id.secretbutton4 -> {
+                number = 4
+            }
+            R.id.secretbutton5 -> {
+                number = 5
+            }
+            R.id.secretbutton6 -> {
+                number = 6
+            }
+            R.id.secretbutton7 -> {
+                number = 7
+            }
+            R.id.secretbutton8 -> {
+                number = 8
+            }
+            R.id.secretbutton9 -> {
+                number = 9
             }
         }
     }
