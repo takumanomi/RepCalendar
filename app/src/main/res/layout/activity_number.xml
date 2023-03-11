@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -22,67 +22,22 @@
         android:id="@+id/secretbutton4"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="#00000000"
         android:backgroundTintMode="src_in"
         android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/secretbutton7"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secretbutton1"
-        app:layout_constraintVertical_bias="0.591" />
-
-    <Button
-        android:id="@+id/secretbutton2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.162"
-        app:layout_constraintStart_toEndOf="@+id/secretbutton1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.184" />
-
-    <Button
-        android:id="@+id/secretbutton1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="32dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.184" />
-
-    <Button
-        android:id="@+id/secretbutton3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/secretbutton2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.184" />
+        app:layout_constraintStart_toStartOf="@+id/secretbutton1"
+        app:layout_constraintTop_toBottomOf="@+id/secretbutton1" />
 
     <Button
         android:id="@+id/secretbutton5"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="28dp"
         android:backgroundTint="#00000000"
         android:backgroundTintMode="src_in"
         android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/secretbutton8"
-        app:layout_constraintStart_toEndOf="@+id/secretbutton4"
-        app:layout_constraintTop_toBottomOf="@+id/secretbutton2"
-        app:layout_constraintVertical_bias="0.591" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton4"
+        tools:layout_editor_absoluteX="155dp" />
 
     <Button
         android:id="@+id/secretbutton6"
@@ -91,25 +46,52 @@
         android:backgroundTint="#00000000"
         android:backgroundTintMode="src_in"
         android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/secretbutton9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toEndOf="@+id/secretbutton5"
-        app:layout_constraintTop_toBottomOf="@+id/secretbutton3"
-        app:layout_constraintVertical_bias="0.591" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton5"
+        app:layout_constraintEnd_toEndOf="@+id/secretbutton3" />
+
+    <Button
+        android:id="@+id/secretbutton2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#00000000"
+        android:backgroundTintMode="src_in"
+        android:text="Button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton1"
+        tools:layout_editor_absoluteX="161dp" />
+
+    <Button
+        android:id="@+id/secretbutton1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="144dp"
+        android:backgroundTint="#00000000"
+        android:backgroundTintMode="src_in"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/secretbutton3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#00000000"
+        android:backgroundTintMode="src_in"
+        android:text="Button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton2"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/secretbutton7"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="352dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="#00000000"
         android:backgroundTintMode="src_in"
         android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/secretbutton8"
-        app:layout_constraintHorizontal_bias="0.524"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/secretbutton4"
+        app:layout_constraintTop_toBottomOf="@+id/secretbutton4" />
 
     <Button
         android:id="@+id/secretbutton8"
@@ -118,24 +100,17 @@
         android:backgroundTint="#00000000"
         android:backgroundTintMode="src_in"
         android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secretbutton2"
-        app:layout_constraintVertical_bias="0.354" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton7"
+        tools:layout_editor_absoluteX="161dp" />
 
     <Button
         android:id="@+id/secretbutton9"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="352dp"
         android:backgroundTint="#00000000"
         android:backgroundTintMode="src_in"
         android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toEndOf="@+id/secretbutton8" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton8"
+        app:layout_constraintEnd_toEndOf="@+id/secretbutton6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

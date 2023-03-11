@@ -46,8 +46,8 @@ class Foodmenu : AppCompatActivity() {
                 intent.putExtra("TEXT_KEY",text)
             }
             R.id.vegiButton -> {
-                intent = Intent(this, vegiActivity::class.java)//negeに飛ばす
-                val text ="vegi"
+                intent = Intent(this, vegiActivity::class.java)//vegeに飛ばす
+                val text ="vege"
                 intent.putExtra("TEXT_KEY",text)
             }
             //intent = Intent(this,vegiActivity::class.java)

@@ -12,9 +12,10 @@ class vegiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityVegiBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_vegi)
+        val text = intent.getStringExtra("TEXT_KEY")//前の画面から送られてきた値を受け取るための定数
     }
 
-    val text = intent.getStringExtra("TEXT_KEY")//前の画面から送られてきた値を受け取るための定数
+
 }
 
 

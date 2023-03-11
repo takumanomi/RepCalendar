@@ -6,6 +6,11 @@ import android.os.Bundle
 import android.view.View
 
 class number : AppCompatActivity() ,View.OnClickListener {
+
+    companion object {
+        val KEY_STATE = "key_state"
+    }
+
     var number = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
