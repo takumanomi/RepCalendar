@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class number : AppCompatActivity() ,View.OnClickListener {
+class number : AppCompatActivity() {
 
     companion object {
         val KEY_STATE = "key_state"
@@ -15,13 +15,13 @@ class number : AppCompatActivity() ,View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_number)
-
-        val intent: Intent = Intent(this,MainActivity().javaClass)
-        startActivity(intent)
     }
 
-    override fun onClick(view: View) {
-        when (view.id) {
+
+
+    fun onNumberButtonTapped(view: View) {
+
+        when (view?.id) {
             R.id.secretbutton1 -> {
                 number = 1
             }
@@ -50,20 +50,12 @@ class number : AppCompatActivity() ,View.OnClickListener {
                 number = 9
             }
         }
+        val state = intent.getSerializableExtra(KEY_STATE)
+        if(state is DataState){
+            var data = DataState(state.name,state.size,number)
+        }
+        var intent = Intent(this, com.example.repcalendar.MainActivity::class.java)//画面を遷移
+
     }
 
-            // ここへボタンクリック時の処理を書く
-                // ・・・
-    //fun resultnumber
-    //when {
-       // R.id.secretbutton1 -> "1"
-        //R.id.secretbutton2 -> "2"
-        //R.id.secretbutton3 -> "3"
-        //R.id.secretbutton4 -> "4"
-        //R.id.secretbutton5 -> "5"
-        //R.id.secretbutton6 -> "6"
-        //R.id.secretbutton7 -> "7"
-        //R.id.secretbutton8 -> "8"
-       // R.id.secretbutton9 -> "9"
-    //}
 }

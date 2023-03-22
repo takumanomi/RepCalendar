@@ -25,6 +25,7 @@
         android:layout_marginTop="50dp"
         android:backgroundTint="#00000000"
         android:backgroundTintMode="src_in"
+        android:onClick="onNumberButtonTapped"
         android:text="Button"
         app:layout_constraintStart_toStartOf="@+id/secretbutton1"
         app:layout_constraintTop_toBottomOf="@+id/secretbutton1" />
@@ -35,6 +36,7 @@
         android:layout_height="100dp"
         android:backgroundTint="#00000000"
         android:backgroundTintMode="src_in"
+        android:onClick="onNumberButtonTapped"
         android:text="Button"
         app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton4"
         tools:layout_editor_absoluteX="155dp" />
@@ -45,6 +47,7 @@
         android:layout_height="100dp"
         android:backgroundTint="#00000000"
         android:backgroundTintMode="src_in"
+        android:onClick="onNumberButtonTapped"
         android:text="Button"
         app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton5"
         app:layout_constraintEnd_toEndOf="@+id/secretbutton3" />
@@ -55,6 +58,7 @@
         android:layout_height="100dp"
         android:backgroundTint="#00000000"
         android:backgroundTintMode="src_in"
+        android:onClick="onNumberButtonTapped"
         android:text="Button"
         app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton1"
         tools:layout_editor_absoluteX="161dp" />
@@ -67,6 +71,7 @@
         android:layout_marginTop="144dp"
         android:backgroundTint="#00000000"
         android:backgroundTintMode="src_in"
+        android:onClick="onNumberButtonTapped"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -78,6 +83,7 @@
         android:layout_marginEnd="32dp"
         android:backgroundTint="#00000000"
         android:backgroundTintMode="src_in"
+        android:onClick="onNumberButtonTapped"
         android:text="Button"
         app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton2"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -89,6 +95,7 @@
         android:layout_marginTop="50dp"
         android:backgroundTint="#00000000"
         android:backgroundTintMode="src_in"
+        android:onClick="onNumberButtonTapped"
         android:text="Button"
         app:layout_constraintStart_toStartOf="@+id/secretbutton4"
         app:layout_constraintTop_toBottomOf="@+id/secretbutton4" />
@@ -99,6 +106,7 @@
         android:layout_height="100dp"
         android:backgroundTint="#00000000"
         android:backgroundTintMode="src_in"
+        android:onClick="onNumberButtonTapped"
         android:text="Button"
         app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton7"
         tools:layout_editor_absoluteX="161dp" />
@@ -109,6 +117,7 @@
         android:layout_height="100dp"
         android:backgroundTint="#00000000"
         android:backgroundTintMode="src_in"
+        android:onClick="onNumberButtonTapped"
         android:text="Button"
         app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton8"
         app:layout_constraintEnd_toEndOf="@+id/secretbutton6" />
