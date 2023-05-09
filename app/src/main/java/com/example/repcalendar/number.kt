@@ -4,8 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import io.realm.kotlin.Realm
+import io.realm.kotlin.RealmConfiguration
 
 class number : AppCompatActivity() {
+    private lateinit var realm: Realm
 
     companion object {
         val KEY_STATE = "key_state"
@@ -14,7 +17,10 @@ class number : AppCompatActivity() {
     var number = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val config = RealmConfiguration.create(schema = setOf(Realmfile::class))
+        realm = Realm.open(config) //realmの初期化
         setContentView(R.layout.activity_number)
+
     }
 
 
@@ -53,9 +59,18 @@ class number : AppCompatActivity() {
         val state = intent.getSerializableExtra(KEY_STATE)
         if(state is DataState){
             var data = DataState(state.name,state.size,number)
+            realm.writeBlocking {
+                copyToRealm(Realmfile().apply {
+                    name = data.name
+                    size = data.size
+                    number = data.number
+                })
+            }
         }
-        var intent = Intent(this, com.example.repcalendar.MainActivity::class.java)//画面を遷移
 
+        startActivity(intent)
+        var intent = Intent(this, com.example.repcalendar.MainActivity::class.java)//画面を遷移
     }
+
 
 }

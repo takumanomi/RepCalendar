@@ -6,6 +6,8 @@ data class DataState (
     val number:Int
         ): java.io.Serializable
 
+//次の画面に値を渡すためのクラス
+
 
 
 

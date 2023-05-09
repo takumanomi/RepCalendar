@@ -10,6 +10,7 @@ import android.widget.AbsListView
 import android.widget.BaseAdapter
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import io.realm.kotlin.query.RealmResults
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
@@ -126,6 +127,11 @@ class CalendarAdapter(context: Context) : BaseAdapter() {
         dateArray = mDateManager.days as List<Date>
         notifyDataSetChanged()
     }
+
+
+
+
+
 
 
 //クリックイベントに対する専用リスナー

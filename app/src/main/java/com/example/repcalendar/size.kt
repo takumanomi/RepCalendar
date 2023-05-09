@@ -12,11 +12,13 @@ import com.example.repcalendar.databinding.ActivitySizeBinding
 class size : AppCompatActivity() {
     private lateinit var binding: ActivitySizeBinding
     private var text: String? = null
+
     @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySizeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         text = intent?.getStringExtra("TEXT_KEY")//前の画面から送られてきた値を受け取るための定数
                 when (text)  {
@@ -40,7 +42,7 @@ class size : AppCompatActivity() {
 
 
         fun onSizeButtonTapped(view: View?) { //numberへ送る？？
-            val intent = Intent(this, number::class.java)//画面を遷移
+
             when (view?.id) {
                 R.id.buttonS -> {
                     val size = "S"
@@ -64,6 +66,7 @@ class size : AppCompatActivity() {
                     intent.putExtra(number.KEY_STATE,state)
                 }
             }
+            val intent = Intent(this, number::class.java)//画面を遷移
         }
 
         binding.buttonS.setOnClickListener {onSizeButtonTapped(it)}

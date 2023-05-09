@@ -50,11 +50,7 @@ class Foodmenu : AppCompatActivity() {
                 val text ="vege"
                 intent.putExtra("TEXT_KEY",text)
             }
-            //intent = Intent(this,vegiActivity::class.java)
-
-
         }
-        startActivity(intent)
     }
 }
 
