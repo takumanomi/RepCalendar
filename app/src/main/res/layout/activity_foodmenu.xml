@@ -46,19 +46,6 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/gelButton"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.542"
-        app:srcCompat="@drawable/gel"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageButton
         android:id="@+id/mouseButton"
         android:layout_width="110dp"
         android:layout_height="110dp"
@@ -97,20 +84,6 @@
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.111"
         app:srcCompat="@drawable/worm"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageButton
-        android:id="@+id/vegiButton"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.056"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542"
-        app:srcCompat="@drawable/vegi"
         tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
