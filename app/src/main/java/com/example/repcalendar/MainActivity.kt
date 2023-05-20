@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.repcalendar.databinding.ActivityMainBinding
 import io.realm.kotlin.Realm
+import io.realm.kotlin.RealmConfiguration
 import io.realm.kotlin.ext.realmListOf
 import io.realm.kotlin.query.RealmResults
 import io.realm.kotlin.ext.query
@@ -21,11 +22,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        // Realmデータベースとの接続を開く
+        val config = RealmConfiguration.create(schema = setOf(Realmfile::class))
+        realm = Realm.open(config)
 
-        // all items in the realm
-        val name: RealmResults<Realmfile> = realm.query<Realmfile>.sort("date", Sort.DESCENDING).find()
-
-        realm.close()
+        val name = realm.query<Realmfile>().sort("date", Sort.DESCENDING).find()
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -51,6 +52,12 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         )
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+
+        // Realmデータベースとの接続を閉じる
+        realm.close()
     }
 }
 

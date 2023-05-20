@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import io.realm.kotlin.Realm
 import io.realm.kotlin.RealmConfiguration
+import io.realm.kotlin.ext.query
 
 class number : AppCompatActivity() {
     private lateinit var realm: Realm
@@ -61,6 +62,8 @@ class number : AppCompatActivity() {
             var data = DataState(state.name,state.size,number)
             realm.writeBlocking {
                 copyToRealm(Realmfile().apply {
+                    // 最大のid+1をセット
+                    id = (realm.query<Realmfile>().max("id", Int::class).find() ?: -1) + 1
                     name = data.name
                     size = data.size
                     number = data.number
@@ -70,6 +73,12 @@ class number : AppCompatActivity() {
 
         startActivity(intent)
         var intent = Intent(this, com.example.repcalendar.MainActivity::class.java)//画面を遷移
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+
+        // Realmデータベースとの接続を閉じる
+        realm.close()
     }
 
 

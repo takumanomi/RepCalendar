@@ -9,7 +9,7 @@ open class Realmfile(): RealmObject, Serializable { //openつけると他アプ�
     var size: String = ""
     var number: Int = 0
     @PrimaryKey
-    var id: Long = 0
+    var id: Int = 0
 
 
     constructor(name: String) : this() {
