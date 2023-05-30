@@ -6,120 +6,122 @@
     android:layout_height="match_parent"
     tools:context=".number">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:srcCompat="@drawable/five"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:srcCompat="@drawable/six"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:srcCompat="@drawable/seven"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="80dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/imageButton1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/two"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@+id/imageButton1"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton1"
+        app:srcCompat="@drawable/four"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/number" />
+        app:srcCompat="@drawable/one"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
-        android:id="@+id/secretbutton4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        android:onClick="onNumberButtonTapped"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="@+id/secretbutton1"
-        app:layout_constraintTop_toBottomOf="@+id/secretbutton1" />
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="80dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/three"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
-        android:id="@+id/secretbutton5"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        android:onClick="onNumberButtonTapped"
-        android:text="Button"
-        app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton4"
-        tools:layout_editor_absoluteX="155dp" />
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:srcCompat="@drawable/nine"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
-        android:id="@+id/secretbutton6"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        android:onClick="onNumberButtonTapped"
-        android:text="Button"
-        app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton5"
-        app:layout_constraintEnd_toEndOf="@+id/secretbutton3" />
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+        app:srcCompat="@drawable/eight"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
-        android:id="@+id/secretbutton2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        android:onClick="onNumberButtonTapped"
-        android:text="Button"
-        app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton1"
-        tools:layout_editor_absoluteX="161dp" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="imageButton2,imageButton1,imageButton3" />
 
-    <Button
-        android:id="@+id/secretbutton1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="144dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        android:onClick="onNumberButtonTapped"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="imageButton5,imageButton6,imageButton4" />
 
-    <Button
-        android:id="@+id/secretbutton3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        android:onClick="onNumberButtonTapped"
-        android:text="Button"
-        app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton2"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="imageButton8,imageButton7,imageButton9" />
 
-    <Button
-        android:id="@+id/secretbutton7"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        android:onClick="onNumberButtonTapped"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="@+id/secretbutton4"
-        app:layout_constraintTop_toBottomOf="@+id/secretbutton4" />
-
-    <Button
-        android:id="@+id/secretbutton8"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        android:onClick="onNumberButtonTapped"
-        android:text="Button"
-        app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton7"
-        tools:layout_editor_absoluteX="161dp" />
-
-    <Button
-        android:id="@+id/secretbutton9"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#00000000"
-        android:backgroundTintMode="src_in"
-        android:onClick="onNumberButtonTapped"
-        android:text="Button"
-        app:layout_constraintBaseline_toBaselineOf="@+id/secretbutton8"
-        app:layout_constraintEnd_toEndOf="@+id/secretbutton6" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="imageButton5,imageButton8,imageButton6,imageButton7,imageButton2,imageButton4,imageButton1,imageButton3,imageButton9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

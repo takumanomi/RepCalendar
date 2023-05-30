@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         val config = RealmConfiguration.create(schema = setOf(Realmfile::class))
         realm = Realm.open(config)
 
-        val name = realm.query<Realmfile>().sort("date", Sort.DESCENDING).find()
+        val name = realm.query<Realmfile>().sort("id", Sort.DESCENDING).find()
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)

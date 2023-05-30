@@ -20,6 +20,7 @@ class CalendarAdapter(context: Context) : BaseAdapter() {
     private val mContext: Context
     private val mDateManager: DateManager
     private val mLayoutInflater: LayoutInflater
+    private var dataList = mutableListOf<String>()//要素の個数が変化するリスト
 
     // リスナを格納する変数を定義（lateinitで初期化を遅らせている）
     private lateinit var listener: OnBookCellClickListener
@@ -127,16 +128,4 @@ class CalendarAdapter(context: Context) : BaseAdapter() {
         dateArray = mDateManager.days as List<Date>
         notifyDataSetChanged()
     }
-
-
-
-
-
-
-
-//クリックイベントに対する専用リスナー
-//リスナーは表示ボタンにイベントが発生するのを見守っている
-
-   // override fun onClick(v: View?) {
-     //   TODO("Not yet implemented"
 }

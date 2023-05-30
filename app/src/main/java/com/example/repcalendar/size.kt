@@ -42,7 +42,7 @@ class size : AppCompatActivity() {
 
 
         fun onSizeButtonTapped(view: View?) { //numberへ送る？？
-
+            var intent = Intent(this, number::class.java)//画面を遷移
             when (view?.id) {
                 R.id.buttonS -> {
                     val size = "S"
@@ -66,7 +66,8 @@ class size : AppCompatActivity() {
                     intent.putExtra(number.KEY_STATE,state)
                 }
             }
-            val intent = Intent(this, number::class.java)//画面を遷移
+            startActivity(intent)
+
         }
 
         binding.buttonS.setOnClickListener {onSizeButtonTapped(it)}

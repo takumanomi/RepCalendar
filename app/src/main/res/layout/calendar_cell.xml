@@ -15,4 +15,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="405dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/foodSize"
+        android:layout_width="325dp"
+        android:layout_height="42dp"
+        app:layout_constraintEnd_toEndOf="@+id/foodName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/foodName"
+        app:layout_constraintTop_toBottomOf="@+id/foodName" />
+
+    <TextView
+        android:id="@+id/foodNumber"
+        android:layout_width="326dp"
+        android:layout_height="39dp"
+        app:layout_constraintEnd_toEndOf="@+id/foodSize"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/foodSize"
+        app:layout_constraintTop_toBottomOf="@+id/foodSize" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
